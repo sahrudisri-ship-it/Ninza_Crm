@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="CampaignTest.CreateCampaignTest">
+        <methods>
+          <include name="excelMethodTest"/>
+          <include name="createCampaignMandatoryFielsTestTest"/>
+          <include name="createProductTest"/>
+        </methods>
+      </class> <!-- CampaignTest.CreateCampaignTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="2" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="ProductTestNG.Product">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="createProduct"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- ProductTestNG.Product -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
