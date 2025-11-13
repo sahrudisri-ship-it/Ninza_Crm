@@ -64,7 +64,7 @@ import propertyUtility.WebDriverUtility;
 			System.out.print(" campaign not created");	
 				
 		}
-		System.out.print(" Hi");
+		
 		driver.findElement(By.xpath("//button[@aria-label='close']")).click();
 		
 		
